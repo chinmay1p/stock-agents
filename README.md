@@ -4,18 +4,23 @@ It is designed to parse user questions, fetch real-time financial data, and gene
 
 ## 🧠 Key Components (Agents)
 > identify_ticker
+
 Detects the stock ticker symbol from a user query (e.g., "Tesla" → TSLA) using yfinance library.
 
 > ticker_news
+
 Retrieves the latest news about the identified company or ticker using the *** marketaux API ***.
 
 > ticker_price
+
 Fetches the current stock price using the *** Alphavantage API ***.
 
 > ticker_price_change
+
 Calculates price movement (amount and percentage) over a short timeframe.
 
 > ticker_analysis
+
 Summarizes the reason behind price changes by analysing recent news.
 
 ---
@@ -42,17 +47,29 @@ Summarizes the reason behind price changes by analysing recent news.
    ```
 2. Open the terminal
 3. Start a python virtual environment using -
-   ``` python -m venv .venv ```
-4. Run -
-   ``` .venv\Scripts\activate.ps1 ```
+   ```
+   python -m venv .venv
+   ```
+5. Run -
+   ```
+   .venv\Scripts\activate.ps1
+   ```
 5.Install dependencies -
-   ``` pip install -r req.txt ```
-6. Redirect to -
-   ``` cd manager ```
-7. Enter -
-   ``` adk web ```
-8. Open your browser and enter the following URL -
-   http://127.0.0.1:8000
+   ``` 
+   pip install -r req.txt
+   ```
+7. Redirect to -
+   ```
+   cd manager
+   ```
+9. Enter -
+   ```
+   adk web
+   ```
+11. Open your browser and enter the following URL -
+   ```
+    http://127.0.0.1:8000
+   ```
 
 ## Working 
 

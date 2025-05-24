@@ -23,12 +23,6 @@ def get_current_price(ticker: str) -> dict:
     except Exception as e:
         return {"status": "error", "error_message": str(e)}
 
-# get_price_tool = AgentTool.from_function(
-#     get_current_price,
-#     name="get_current_price",
-#     description="Fetches the current stock price using the ticker."
-# )
-
 ticker_price = Agent(
     name="ticker_price",
     model="gemini-2.0-flash",

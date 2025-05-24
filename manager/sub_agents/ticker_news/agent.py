@@ -42,7 +42,7 @@ ticker_news = Agent(
     instruction="""
     Use the tool to retrieve the latest 5 news items for a ticker.
     Tools - 
-    get_ticker_news_tool
+    get_ticker_news
     """,
     tools=[get_ticker_news]
 )

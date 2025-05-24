@@ -44,7 +44,7 @@ def get_analysis_with_news(ticker: str) -> dict:
 
 ticker_analysis = Agent(
     name="ticker_analysis",
-    model="gemini-2.0-pro",
+    model="gemini-2.0-flash",
     description="Performs an analysis of stock based on recent news.",
     instruction="""
     Use the tool to fetch the top 5 most recent news items about a stock ticker.
@@ -57,7 +57,7 @@ ticker_analysis = Agent(
     Output a concise analysis paragraph that explains the most probable reasons behind recent stock performance or shifts in investor sentiment.
     
     Tools -
-    get_analysis_news_tool
+    get_analysis_with_news
     """,
     tools=[get_analysis_with_news]
 )

@@ -2,6 +2,9 @@
 This project is a multi-agent system built using the google-adk framework that answers stock-related queries in natural language. 
 It is designed to parse user questions, fetch real-time financial data, and generate a concise analysis using multiple specialized agents.
 
+### Video link 
+https://drive.google.com/drive/folders/1b4H6jNYvv60yQW1PP7eLRIUIfnEhi57x?usp=sharing
+
 ---
 
 ## 🧠 Key Components (Agents)

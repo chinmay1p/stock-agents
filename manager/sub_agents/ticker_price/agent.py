@@ -4,6 +4,7 @@ import os
 
 API_KEY ="PBG610RYUPML0I5F"
 
+# Tool to get the current stock price using Alpha Vantage
 def get_current_price(ticker: str) -> dict:
     """Fetches the current stock price for the given ticker."""
     try:
@@ -13,6 +14,7 @@ def get_current_price(ticker: str) -> dict:
         if "Global Quote" not in response:
             return {"status": "error", "error_message": "Unable to fetch current price."}
 
+        # Extract price from the response
         price = response["Global Quote"]["05. price"]
 
         return {

@@ -4,6 +4,7 @@ import os
 
 API_KEY ="PBG610RYUPML0I5F"
 
+# Tool to fetch recent price change percentage for a given ticker
 def get_price_change(ticker: str) -> dict:
     """Fetches the recent price change percentage for the given ticker."""
     try:
@@ -13,6 +14,7 @@ def get_price_change(ticker: str) -> dict:
         if "Global Quote" not in response:
             return {"status": "error", "error_message": "Unable to fetch price change."}
 
+        # Extract change percentage
         change_percent = response["Global Quote"]["10. change percent"]
 
         return {

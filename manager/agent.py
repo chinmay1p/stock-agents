@@ -1,12 +1,13 @@
 from google.adk.agents import Agent
 
+# Import sub-agents responsible for specific stock-related tasks
 from .sub_agents.indentify_ticker.agent import indentify_ticker
 from .sub_agents.ticker_analysis.agent import ticker_analysis
 from .sub_agents.ticker_news.agent import ticker_news
 from .sub_agents.ticker_price.agent import ticker_price
 from .sub_agents.ticker_price_change.agent import ticker_price_change
 
-
+# Define the root agent that manages task delegation to sub-agents
 root_agent=Agent(
     name="manager",
     model="gemini-2.0-flash",
@@ -21,5 +22,7 @@ root_agent=Agent(
         - ticker_price: if the user wants the current price.
         - ticker_price_change: if the user wants to know how much the stock has moved recently.
     """,
+
+     # List of sub-agents it can delegate tasks to
     sub_agents=[indentify_ticker,ticker_analysis,ticker_news,ticker_price,ticker_price_change],
 )

@@ -4,7 +4,7 @@ import os
 
 API_KEY = "zXO2lbc7OInWU6GdVOslqqKMmvj3n6me4pceutA6"
 
-
+# Tool to fetch recent news for a given stock ticker
 def get_ticker_news(ticker: str) -> dict:
     """Fetches the top 5 news headlines for a stock ticker using Marketaux."""
     try:
@@ -19,9 +19,11 @@ def get_ticker_news(ticker: str) -> dict:
         response = requests.get(url, params=params)
         data = response.json()
 
+        # Check if news data exists
         if "data" not in data:
             return {"status": "error", "error_message": "No news found or bad response format."}
 
+        # Extract top 5 news headlines with URLs
         news_items = data["data"][:5]
         headlines = [{"title": item["title"], "url": item["url"]} for item in news_items]
 

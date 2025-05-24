@@ -4,6 +4,7 @@ import os
 
 API_KEY ="zXO2lbc7OInWU6GdVOslqqKMmvj3n6me4pceutA6"
 
+# Tool to fetch recent news for a stock ticker with extra context for analysis
 def get_analysis_with_news(ticker: str) -> dict:
     """Fetches top 5 news articles and prepares them for analysis."""
     try:
@@ -14,6 +15,7 @@ def get_analysis_with_news(ticker: str) -> dict:
             "filter_entities": "true",
             "language": "en",
             "limit": 5
+            # Limit to top 5 articles
         }
 
         response = requests.get(url, params=params)
@@ -22,6 +24,7 @@ def get_analysis_with_news(ticker: str) -> dict:
         if "data" not in data:
             return {"status": "error", "error_message": "Unable to fetch news for analysis."}
 
+        # Extract title, summary, and URL from each news item
         news_items = data["data"]
         headlines = [
             {

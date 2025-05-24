@@ -2,7 +2,7 @@ import requests
 from google.adk.agents import Agent
 import os
 
-API_KEY ="PBG610RYUPML0I5F"
+API_KEY ="zXO2lbc7OInWU6GdVOslqqKMmvj3n6me4pceutA6"
 
 def get_analysis_with_news(ticker: str) -> dict:
     """Fetches top 5 news articles and prepares them for analysis."""

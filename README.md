@@ -3,23 +3,23 @@ This project is a multi-agent system built using the google-adk framework that a
 It is designed to parse user questions, fetch real-time financial data, and generate a concise analysis using multiple specialized agents.
 
 ## 🧠 Key Components (Agents)
-> identify_ticker
+**identify_ticker**
 
 Detects the stock ticker symbol from a user query (e.g., "Tesla" → TSLA) using yfinance library.
 
-> ticker_news
+**ticker_news**
 
-Retrieves the latest news about the identified company or ticker using the *** marketaux API ***.
+Retrieves the latest news about the identified company or ticker using the ***marketaux API***.
 
-> ticker_price
+**ticker_price**
 
-Fetches the current stock price using the *** Alphavantage API ***.
+Fetches the current stock price using the ***Alphavantage API***.
 
-> ticker_price_change
+**ticker_price_change**
 
 Calculates price movement (amount and percentage) over a short timeframe.
 
-> ticker_analysis
+**ticker_analysis**
 
 Summarizes the reason behind price changes by analysing recent news.
 
@@ -72,4 +72,10 @@ Summarizes the reason behind price changes by analysing recent news.
    ```
 
 ## Working 
+
+![image](https://github.com/user-attachments/assets/75580a0e-6d4d-4e04-b7da-57a66fb5cb0a)
+![image](https://github.com/user-attachments/assets/79288de4-3da4-4382-ac4c-457634444d60)
+![image](https://github.com/user-attachments/assets/f9610cf1-651d-4e06-bd45-445823a5dcd8)
+
+
 

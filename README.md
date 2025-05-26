@@ -62,7 +62,7 @@ Summarizes the reason behind price changes by analysing recent news.
    ```
 5.Install dependencies -
    ``` 
-   pip install -r req.txt
+  pip install -r req.txt
    ```
 7. Redirect to -
    ```

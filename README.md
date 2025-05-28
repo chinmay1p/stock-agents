@@ -49,7 +49,7 @@ Summarizes the reason behind price changes by analysing recent news.
 ## Set-Up
 1. Clone the repository
    ``` bash
-   git clone https://github.com/yourusername/stock-agents.git
+   git clone https://github.com/chinmay1p/stock-agents.git
    ```
 2. Open the terminal
 3. Start a python virtual environment using -

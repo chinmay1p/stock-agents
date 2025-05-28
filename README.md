@@ -2,6 +2,9 @@
 This project is a multi-agent system built using the google-adk framework that answers stock-related queries in natural language. 
 It is designed to parse user questions, fetch real-time financial data, and generate a concise analysis using multiple specialized agents.
 
+### Video link 
+https://drive.google.com/drive/folders/1b4H6jNYvv60yQW1PP7eLRIUIfnEhi57x?usp=sharing
+
 ---
 
 ## 🧠 Key Components (Agents)
@@ -46,7 +49,7 @@ Summarizes the reason behind price changes by analysing recent news.
 ## Set-Up
 1. Clone the repository
    ``` bash
-   git clone https://github.com/yourusername/stock-agents.git
+   git clone https://github.com/chinmay1p/stock-agents.git
    ```
 2. Open the terminal
 3. Start a python virtual environment using -
@@ -59,7 +62,7 @@ Summarizes the reason behind price changes by analysing recent news.
    ```
 5.Install dependencies -
    ``` 
-   pip install -r req.txt
+  pip install -r req.txt
    ```
 7. Redirect to -
    ```

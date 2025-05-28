@@ -11,8 +11,8 @@ def get_ticker(query:str)->dict:
         price = stock.info.get("currentPrice", None)
 
         return {
-            "ticker": query,
-            "price": price
+            "ticker":query,
+            "price":price
         }
     except Exception as e:
         return {
